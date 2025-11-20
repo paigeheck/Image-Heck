@@ -5,8 +5,54 @@
   </head>
   <body>
     <a-scene>
-      <!-- 360° equirectangular background -->
+
+      <!-- Background -->
       <a-sky src="Assets/BACKROUND.jpg"></a-sky>
+
+      <!-- Assets -->
+      <a-assets>
+        <a-asset-item id="dino1" src="Assets/Dino 1.obj"></a-asset-item>
+        <a-asset-item id="dino2" src="Assets/Dino_2.obj"></a-asset-item>
+        <a-asset-item id="dinoRaptor" src="Assets/Dino_raptor.obj"></a-asset-item>
+        <a-asset-item id="dinotrex" src="Assets/Dino_trex.obj"></a-asset-item>
+        <img id="raptorTex" src="assets/raptor_texture.jpg">
+      </a-assets>
+
+      <!-- Dinosaur 1 -->
+      <a-obj-model
+        src="#dino1"
+        material="color: green"
+        position="30 0 -15"
+        scale="1 1 1">
+      </a-obj-model>
+
+      <!-- Dinosaur 2 -->
+      <a-obj-model
+        src="#dino2"
+        material="color: lightgreen"
+        position="20 0 -5"
+        scale="1 1 1"
+        rotation="0 180 0">
+      </a-obj-model>
+
+      <!-- Dinosaur Raptor -->
+      <a-obj-model
+        src="#dinoRaptor"
+        material="color: darkgreen"
+        position="25 0 15"
+        scale="1 1 1"
+        rotation="0 180 0">
+      </a-obj-model>
+
+      <!-- Dinosaur TRex -->
+      <a-obj-model
+        src="#dinotrex"
+        material="color: green"
+        position="20 0 25"
+        scale="0.08 0.08 0.08"
+        rotation="0 125 0">
+      </a-obj-model>
+
     </a-scene>
   </body>
 </html>
